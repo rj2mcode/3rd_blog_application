@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tech_blog/gen/assets.gen.dart';
 import 'package:tech_blog/view/mycast_screen.dart';
-import 'package:tech_blog/strings.dart';
+import 'package:tech_blog/components/strings.dart';
 import 'package:validators/validators.dart';
 
 class RegisterIntro extends StatelessWidget {

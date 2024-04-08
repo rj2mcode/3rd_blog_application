@@ -4,7 +4,7 @@ import 'package:tech_blog/components/colors.dart';
 import 'package:tech_blog/components/hashtags.dart';
 import 'package:tech_blog/gen/assets.gen.dart';
 import 'package:tech_blog/models/fake_data.dart';
-import 'package:tech_blog/strings.dart';
+import 'package:tech_blog/components/strings.dart';
 
 class MyCasts extends StatefulWidget {
   const MyCasts({super.key});

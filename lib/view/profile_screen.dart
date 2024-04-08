@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_blog/components/colors.dart';
 import 'package:tech_blog/components/divider_line.dart';
 import 'package:tech_blog/gen/assets.gen.dart';
-import 'package:tech_blog/strings.dart';
+import 'package:tech_blog/components/strings.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({
