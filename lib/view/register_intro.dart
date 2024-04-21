@@ -136,7 +136,8 @@ class RegisterIntro extends StatelessWidget {
                       onPressed: () {
                         Navigator.pop(context);
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (BuildContext context) => MyCasts()));
+                            builder: (BuildContext context) =>
+                                const MyCasts()));
                       },
                       child: const Text("Continue",
                           style: TextStyle(color: Colors.white)))

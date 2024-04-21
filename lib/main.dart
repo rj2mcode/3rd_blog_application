@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tech_blog/components/colors.dart';
-import 'package:tech_blog/view/main_screen.dart';
 import 'package:tech_blog/view/splash_screen.dart';
 
 void main() {
@@ -83,7 +82,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       //: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }

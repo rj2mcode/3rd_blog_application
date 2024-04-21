@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:tech_blog/components/api_constant.dart';
 import 'package:tech_blog/components/colors.dart';
+import 'package:tech_blog/components/strings.dart';
+import 'package:tech_blog/components/url_luncher.dart';
 import 'package:tech_blog/gen/assets.gen.dart';
+import 'package:tech_blog/services/dio_service.dart';
 import 'package:tech_blog/view/home_screen.dart';
 import 'package:tech_blog/view/profile_screen.dart';
 import 'package:tech_blog/view/register_intro.dart';
@@ -14,6 +19,7 @@ class MainScreen extends StatelessWidget {
   MainScreen({super.key});
   @override
   Widget build(BuildContext context) {
+    DioService().getMethod(ApiConstant.getHomeItems);
     var textTheme = Theme.of(context).textTheme;
     var size = MediaQuery.of(context).size;
     double bodymargin = size.width / 16;
@@ -51,12 +57,16 @@ class MainScreen extends StatelessWidget {
                 const Divider(),
                 ListTile(
                   title: const Text("Shere this app"),
-                  onTap: () {},
+                  onTap: () async {
+                    await Share.share("Hi");
+                  },
                 ),
                 const Divider(),
                 ListTile(
                   title: const Text("About us"),
-                  onTap: () {},
+                  onTap: () {
+                    mylunchUrl(MyStrings.techBlogUrl);
+                  },
                 ),
                 const Divider(),
                 ListTile(

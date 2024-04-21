@@ -4,7 +4,7 @@ import 'package:tech_blog/models/fake_data.dart';
 
 class MainTags extends StatelessWidget {
   MainTags({super.key, required this.index});
-  var index;
+  var index = 0;
   @override
   Widget build(BuildContext context) {
     return Container(

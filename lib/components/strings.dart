@@ -1,4 +1,5 @@
 class MyStrings {
+  static const String techBlogUrl = "https://github.com/rj2mcode";
   static const String hotestBlogs = "Hot Posts";
   static const String hotestPodcasts = "Hot Podcasts";
   static const String relativePosts = "نوشته های مرتبط";
